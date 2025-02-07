@@ -195,7 +195,7 @@
         <li>Pinaka maganda sa lahat.</li>
        
 
-        <h1>1 reason to stay:</h1>
+        <h1>1 reason to stay</h1>
         <ol>
         <li>Gusto kita makita maging nurse.</li>
         </ol>
@@ -204,6 +204,60 @@
             
         </div>
     </div>
-    
+
+    <style>
+        .flower {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+        }
+
+        .petal {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            transform-origin: center;
+        }
+
+        .petal:nth-child(1) {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+        }
+
+        .petal:nth-child(2) {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        .petal:nth-child(3) {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%) rotate(270deg);
+        }
+
+        .petal:nth-child(4) {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(180deg);
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <h2>"Pink petals para sa pink mong pagkatao"</h2>
 
 </html>
